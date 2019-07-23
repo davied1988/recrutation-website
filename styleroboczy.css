@@ -99,7 +99,7 @@ input, select {
 :root {
     --black: #000;
     --white: #fff;
-    --grey: rgb(141, 111, 111);
+    --green: #26f90e;
     
 }
 
@@ -150,6 +150,29 @@ header nav h2 {
 header nav li {
     float: left;
     margin-left: 30px;
+}
+
+.underline {
+    display: inline-block;
+    position: relative;
+}
+
+.underline::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 7px;
+    bottom: -7px;
+    left: 0;
+    background-color: var(--green);
+    transform-origin: bottom right;
+    transition: transform 0.18s ease-out;
+}
+
+.underline:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 #logo {
