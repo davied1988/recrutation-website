@@ -6,36 +6,37 @@
 
 body {
     background-color: #fff;
+    font-family: 'Poppins', sans-serif;
 }
 
 :root {
     --main-green: #51FF3D;
+    --overlay-color: rgba(0, 0, 0, 0.15);
+}
+
+.wrapper {
+    max-width: 1400px;
+    margin: auto;
 }
 
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 8vh;
     color: #000;
-    font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
 }
 
 .logo {
-    color: #000;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: 20px;
-    transform: scale(0.4);
+    transform: scale(0.);
     -webkit-transform: scale(0.4);
-    scale: (0.5);
-    -moz-transform: scale(0.4);
-    scale: (0.5);
-    -ms-transform: scale(0.4);
-    scale: (0.5);
-    -o-transform: scale(0.4);
-    scale: (0.5);
+    scale: (0.4);
+    -moz-transform: scale(0.);
+    scale: (0.4);
+    -ms-transform: scale(0.);
+    scale: (0.4);
+    -o-transform: scale(0.);
+    scale: (0.4);
 }
 
 .nav-links {
@@ -100,6 +101,61 @@ hr {
     transform-origin: bottom left;
 }
 
+/* Jumbotron */
+#lead-banner img {
+    width: 100%;
+    background: no-repeat center center;
+}
+
+#lead-banner {
+    /* max-height: 740px; */
+    height: 88.9vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 27%;
+    width: 100%;
+    
+}
+
+.banner-title {
+    color: #fff;
+    max-width: 370px;
+}
+
+#lead-banner p {
+    font-size: .8rem;
+    font-style: italic;
+    margin-top: 1rem;
+    max-width: 270px;
+}
+
+.hello {
+    border: 1px solid #fff;
+    background: none;
+    padding: 8px 12px;
+    line-height: 50%;
+    text-decoration: none;
+    margin-top: 1rem;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    
+}
+
+.hello a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: .6em;
+}
+
+
 @media screen and (max-width: 1024px) {
     .nav-links {
         width: 60%;
@@ -110,12 +166,13 @@ hr {
     body {
         overflow-x: hidden;
     }
-
+    
+        
     .nav-links {
         position: absolute;
         right: 0;
         height: 50vh;
-        top: 8vh;
+        top: 9vh;
         background-color: #fff;
         flex-direction: column;
         align-items: center;
@@ -130,6 +187,7 @@ hr {
         -moz-transition: transform .5s ease-in;
         -ms-transition: transform .5s ease-in;
         -o-transition: transform .5s ease-in;
+        z-index: 99;
     }
 
     .nav-links li {
