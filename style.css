@@ -108,7 +108,6 @@ hr {
 }
 
 #lead-banner {
-    /* max-height: 740px; */
     height: 88.9vh;
     overflow: hidden;
     position: relative;
@@ -123,29 +122,37 @@ hr {
 
 .banner-title {
     color: #fff;
-    max-width: 370px;
+    max-width: 440px;
+    font-size: 1.2rem;
 }
 
 #lead-banner p {
-    font-size: .8rem;
+    /* font-size: .8rem; */
     font-style: italic;
     margin-top: 1rem;
-    max-width: 270px;
+    max-width: 350px;
 }
 
 .hello {
     border: 1px solid #fff;
+    font-size: 1.5rem;
     background: none;
-    padding: 8px 12px;
-    line-height: 50%;
+    padding: 8px 16px;
+    line-height: 80%;
     text-decoration: none;
-    margin-top: 1rem;
+    margin-top: 1.4rem;
     border-radius: 50px;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
-    
+    letter-spacing: 2px;
+    transition: .8s;
+    -webkit-transition: .8s;
+    -moz-transition: .8s;
+    -ms-transition: .8s;
+    -o-transition: .8s;
+    cursor: pointer;
 }
 
 .hello a {
@@ -153,6 +160,31 @@ hr {
     color: #fff;
     text-transform: uppercase;
     font-size: .6em;
+}
+
+.columns {
+    display: flex;
+}
+
+.columns .ideas {
+    font-weight: 700;
+    max-width: 380px;
+    flex: 2;
+    padding: 4rem;
+    margin: 7rem;
+    font-size: 1.2rem;
+}
+
+.columns .paragraph {
+    /* max-width: 320px; */
+    flex: 2;
+    padding: 4rem;
+    margin: 7rem;
+    font-style: italic;
+    color: rgb(146, 140, 140);
+    font-size: .9em;
+    max-width: 480px;
+    font-size: 1.2rem;
 }
 
 
