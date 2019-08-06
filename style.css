@@ -206,6 +206,106 @@ hr {
     grid-column: 4/5;
 }
 
+.cases {
+    text-align: center;
+    margin-bottom: 2rem;
+    transition: .6s;
+    -webkit-transition: .6s;
+    -moz-transition: .6s;
+    -ms-transition: .6s;
+    -o-transition: .6s;
+}
+
+.hello2 {
+    border: 1px solid grey;
+    font-size: 1.7rem;
+    background: none;
+    
+    padding: 8px 12px;
+    line-height: 50%;
+    text-decoration: none;
+    margin-top: 1.4rem;
+    border-radius: 50px;
+}
+
+.hello2 a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .6em;
+    color: grey;
+}
+
+/* Clients */
+
+.clients {
+    margin: 6rem;
+    position: relative;
+}
+
+.clients h2 {
+    position: absolute;
+    top: -30px;
+    left: 400px;
+    color: grey;
+    font-size: .8em;
+    text-transform: uppercase;
+    padding: 8px;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.clients h3 {
+    position: absolute;
+    top: 200px;
+    left: 760px;
+    z-index: 2;
+    font-size: 1.4em;
+}
+
+.clients h4 {
+    position: absolute;
+    top: 250px;
+    left: 760px;
+    text-transform: uppercase;
+    color: grey;
+    font-weight: 400;
+    font-size: .8em;
+}
+
+.clients img {
+    position: absolute;
+    left: 570px;
+    top: 90px;
+    transform: scale(.8);
+    -webkit-transform: scale(.8);
+    -moz-transform: scale(.8);
+    -ms-transform: scale(.8);
+    -o-transform: scale(.8);
+}
+
+.clients .testimonial {
+    position: absolute;
+    top: 250px;
+    left: 460px;
+    transform: scale(.8);
+    -webkit-transform: scale(.8);
+    -moz-transform: scale(.8);
+    -ms-transform: scale(.8);
+    -o-transform: scale(.8);
+}
+
+.clients blockquote {
+    position: absolute;
+    top: 300px;
+    left: 760px;
+    width: 500px;
+    color: grey;
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+
+
 
 
 
