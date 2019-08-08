@@ -240,6 +240,7 @@ hr {
 .clients {
     margin: 6rem;
     position: relative;
+    
 }
 
 .clients h2 {
@@ -257,7 +258,7 @@ hr {
 .clients h3 {
     position: absolute;
     top: 200px;
-    left: 760px;
+    left: 460px;
     z-index: 2;
     font-size: 1.4em;
 }
@@ -265,7 +266,7 @@ hr {
 .clients h4 {
     position: absolute;
     top: 250px;
-    left: 760px;
+    left: 460px;
     text-transform: uppercase;
     color: grey;
     font-weight: 400;
@@ -274,7 +275,7 @@ hr {
 
 .clients img {
     position: absolute;
-    left: 570px;
+    left: 270px;
     top: 90px;
     transform: scale(.8);
     -webkit-transform: scale(.8);
@@ -286,7 +287,7 @@ hr {
 .clients .testimonial {
     position: absolute;
     top: 250px;
-    left: 460px;
+    left: 160px;
     transform: scale(.8);
     -webkit-transform: scale(.8);
     -moz-transform: scale(.8);
@@ -297,15 +298,37 @@ hr {
 .clients blockquote {
     position: absolute;
     top: 300px;
-    left: 760px;
+    left: 460px;
     width: 500px;
     color: grey;
     font-style: italic;
     font-size: 1.2em;
 }
 
+    
+.bmb-container {
+    margin-top: 47rem;
+}
 
+.footer p {
+    text-decoration: none;
+}
 
+footer h6 {
+    font-weight: bold;
+    font-size: 14px;
+    
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.menu li{
+    list-style: none;
+    margin-top: 2rem;
+}
 
 
 
