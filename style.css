@@ -240,13 +240,13 @@ hr {
 .clients {
     margin: 6rem;
     position: relative;
-    
+    height: 50vh;
 }
 
 .clients h2 {
     position: absolute;
     top: -30px;
-    left: 400px;
+    left: 150px;
     color: grey;
     font-size: .8em;
     text-transform: uppercase;
@@ -307,7 +307,7 @@ hr {
 
     
 .bmb-container {
-    margin-top: 47rem;
+    margin-top: 17rem;
 }
 
 .footer p {
@@ -330,8 +330,33 @@ footer h6 {
     margin-top: 2rem;
 }
 
+.row {
+    height: 40vh;
+    background-color: rgb(37, 37, 37);
+    width: 100%;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
 
+.row div {
+    padding: 0 4rem;
+}
 
+.row h5 {
+    margin-top: 3rem;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+h5 {
+    background-color: rgb(37, 37, 37);
+    width: 100%;
+    color: #fff;
+    padding: 2rem;
+    margin: 0;
+    padding-left: 12rem;
+}
 
 
 @media screen and (max-width: 1024px) {
@@ -434,4 +459,33 @@ footer h6 {
     .underline::before {
         display: none;
     }
+    .row {
+        height: 140vh;
+    }
+    .row div {
+        margin-bottom: 6rem;
+    }
+    .columns {
+        display: flex;
+        flex-direction: column;
+    }
+    .columns .ideas,
+    .columns .paragraph {
+        min-width: 400px;
+    }
+    #lead-banner {
+        height: 30vh;
+    }
+    #lead-banner button {
+        font-size: .6em;
+        text-align: center;
+    }
+    #lead-banner h1 {
+        font-size: .9em;
+    }
+    #lead-banner p {
+        font-size: .7em;
+    }
+    
+    .footer
 }
