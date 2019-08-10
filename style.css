@@ -138,7 +138,7 @@ hr {
     font-size: 1.5rem;
     background: none;
     padding: 8px 16px;
-    /* line-height: 100%; */
+    line-height: 100%;
     text-decoration: none;
     margin-top: 1.4rem;
     border-radius: 50px;
@@ -206,6 +206,7 @@ hr {
     grid-column: 4/5;
 }
 
+
 .cases {
     text-align: center;
     margin-bottom: 2rem;
@@ -218,20 +219,19 @@ hr {
 
 .hello2 {
     border: 1px solid grey;
-    font-size: 1.7rem;
+    font-size: 3rem;
     background: none;
-    
-    padding: 8px 12px;
-    line-height: 50%;
+    padding: 0px 16px;
+    line-height: 100%;
     text-decoration: none;
-    margin-top: 1.4rem;
+    margin-top: 4rem;
     border-radius: 50px;
 }
 
 .hello2 a {
     text-decoration: none;
     text-transform: uppercase;
-    font-size: .6em;
+    font-size: .4em;
     color: grey;
 }
 
@@ -307,11 +307,12 @@ hr {
 
     
 .bmb-container {
-    margin-top: 17rem;
+    margin-top: 37rem;
 }
 
 .footer p {
     text-decoration: none;
+    margin-bottom: 0;
 }
 
 footer h6 {
@@ -349,6 +350,14 @@ footer h6 {
     padding: 0;
 }
 
+.row-flex {
+    display: flex;
+}
+
+.row-flex div {
+    padding: 0;
+}
+
 h5 {
     background-color: rgb(37, 37, 37);
     width: 100%;
@@ -358,6 +367,11 @@ h5 {
     padding-left: 12rem;
 }
 
+#bmb-footer {
+    margin: 1.5rem;
+}
+
+/* Media Queries */
 
 @media screen and (max-width: 1024px) {
     .nav-links {
@@ -369,7 +383,9 @@ h5 {
     body {
         overflow-x: hidden;
     }
-    
+    .hello {
+        
+    }
         
     .nav-links {
         position: absolute;
@@ -460,7 +476,7 @@ h5 {
         display: none;
     }
     .row {
-        height: 140vh;
+        height: 180vh;
     }
     .row div {
         margin-bottom: 6rem;
@@ -487,5 +503,23 @@ h5 {
         font-size: .7em;
     }
     
-    .footer
+    #bmb-footer {
+        margin: 1.5rem;
+        margin-top: 20rem;
+        position: relative;
+    }
+
+    footer {
+        position: absolute;
+        top: 40rem;
+    }
+
+    .row-flex {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .row-flex div img {
+        width: 100%;
+    }
 }
