@@ -1,3 +1,5 @@
+/* Main settings */
+
 * {
     margin: 0;
     padding: 0;
@@ -12,6 +14,8 @@ body {
 :root {
     --main-green: #51FF3D;
     --overlay-color: rgba(0, 0, 0, 0.15);
+    --main-grey: rgb(146, 140, 140);
+    --dark-grey: rgb(17, 17, 17);
 }
 
 .wrapper {
@@ -19,11 +23,12 @@ body {
     margin: auto;
 }
 
+/* Navigation */
+
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    color: #000;
     text-transform: uppercase;
 }
 
@@ -51,7 +56,8 @@ nav {
 
 .nav-links a {
     text-decoration: none;
-    color: #000;
+    color: #333;
+    margin-top: 15px;
     letter-spacing: 3px;
     font-weight: bold;
     font-size: .9rem;
@@ -65,7 +71,7 @@ nav {
 .burger div {
     width: 25px;
     height: 2px;
-    background-color: #000;
+    background-color: var(--main-grey);
     margin: 5px;
     transition: all .3s ease;
     -webkit-transition: all .3s ease;
@@ -117,7 +123,6 @@ hr {
     position: absolute;
     top: 27%;
     width: 100%;
-    
 }
 
 .banner-title {
@@ -127,7 +132,6 @@ hr {
 }
 
 #lead-banner p {
-    /* font-size: .8rem; */
     font-style: italic;
     margin-top: 1rem;
     max-width: 350px;
@@ -160,7 +164,6 @@ hr {
     color: #fff;
     text-transform: uppercase;
     font-size: .6em;
-    
 }
 
 .columns {
@@ -177,7 +180,6 @@ hr {
 }
 
 .columns .paragraph {
-    /* max-width: 320px; */
     flex: 2;
     padding: 4rem;
     margin: 7rem;
@@ -192,8 +194,6 @@ hr {
 .gallery-section .gallery {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    /*overflow: hidden;*/
-    
 }
 
 .gallery-section .gallery a:nth-child(1) {
@@ -232,7 +232,8 @@ hr {
     text-decoration: none;
     text-transform: uppercase;
     font-size: .4em;
-    color: grey;
+    color: var(--main-grey);
+    line-height: 3;
 }
 
 /* Clients */
@@ -247,7 +248,7 @@ hr {
     position: absolute;
     top: -30px;
     left: 150px;
-    color: grey;
+    color: var(--main-grey);
     font-size: .8em;
     text-transform: uppercase;
     padding: 8px;
@@ -268,8 +269,7 @@ hr {
     top: 250px;
     left: 460px;
     text-transform: uppercase;
-    color: grey;
-    font-weight: 400;
+    color: var(--main-grey);
     font-size: .8em;
 }
 
@@ -305,9 +305,8 @@ hr {
     font-size: 1.2em;
 }
 
-    
 .bmb-container {
-    margin-top: 37rem;
+    margin-top: 5rem;
 }
 
 .footer p {
@@ -318,7 +317,6 @@ hr {
 footer h6 {
     font-weight: bold;
     font-size: 14px;
-    
 }
 
 .menu {
@@ -333,15 +331,14 @@ footer h6 {
 
 .row {
     height: 40vh;
-    background-color: rgb(37, 37, 37);
+    background-color: var(--dark-grey);
     width: 100%;
-    color: #fff;
     padding: 0;
     margin: 0;
 }
 
 .row div {
-    padding: 0 4rem;
+    padding: 0 8rem;
 }
 
 .row h5 {
@@ -352,6 +349,7 @@ footer h6 {
 
 .row-flex {
     display: flex;
+    justify-content: space-between;
 }
 
 .row-flex div {
@@ -359,7 +357,7 @@ footer h6 {
 }
 
 h5 {
-    background-color: rgb(37, 37, 37);
+    background-color: var(--dark-grey);
     width: 100%;
     color: #fff;
     padding: 2rem;
@@ -383,10 +381,7 @@ h5 {
     body {
         overflow-x: hidden;
     }
-    .hello {
-        
-    }
-        
+
     .nav-links {
         position: absolute;
         right: 0;
@@ -411,7 +406,6 @@ h5 {
 
     .nav-links li {
         opacity: 0;
-
     }
 
     .nav-links a {
@@ -505,21 +499,38 @@ h5 {
     
     #bmb-footer {
         margin: 1.5rem;
-        margin-top: 20rem;
-        position: relative;
-    }
-
-    footer {
-        position: absolute;
-        top: 40rem;
     }
 
     .row-flex {
         display: flex;
         flex-direction: column;
-        
+        align-items: 
     }
     .row-flex div img {
         width: 100%;
+    }
+
+    .row-flex div {
+        margin-bottom: 1rem;
+    }
+
+    .row-flex div:nth-child(1) {
+        margin-top: 1rem;
+    }
+
+    .footer__contact,
+    .footer__contact h6 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    #menu-footer-menu li {
+        text-align: center;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.5rem;
     }
 }
