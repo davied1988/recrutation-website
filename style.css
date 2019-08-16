@@ -1,3 +1,5 @@
+/* Main settings */
+
 * {
     margin: 0;
     padding: 0;
@@ -12,6 +14,8 @@ body {
 :root {
     --main-green: #51FF3D;
     --overlay-color: rgba(0, 0, 0, 0.15);
+    --main-grey: rgb(146, 140, 140);
+    --dark-grey: rgb(17, 17, 17);
 }
 
 .wrapper {
@@ -19,12 +23,14 @@ body {
     margin: auto;
 }
 
+/* Navigation */
+
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    color: #000;
     text-transform: uppercase;
+    height: 4rem;
 }
 
 .logo {
@@ -51,7 +57,8 @@ nav {
 
 .nav-links a {
     text-decoration: none;
-    color: #000;
+    color: #333;
+    margin-top: 15px;
     letter-spacing: 3px;
     font-weight: bold;
     font-size: .9rem;
@@ -65,7 +72,7 @@ nav {
 .burger div {
     width: 25px;
     height: 2px;
-    background-color: #000;
+    background-color: var(--main-grey);
     margin: 5px;
     transition: all .3s ease;
     -webkit-transition: all .3s ease;
@@ -89,7 +96,7 @@ hr {
     width: 100%;
     transform: scaleX(0);
     height: 7px;
-    bottom: -7px;
+    bottom: -2px;
     left: 0;
     background-color: var(--main-green);
     transform-origin: bottom right;
@@ -99,6 +106,10 @@ hr {
 .underline:hover::before {
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+
+.underline:hover {
+    cursor: pointer;
 }
 
 /* Jumbotron */
@@ -117,7 +128,6 @@ hr {
     position: absolute;
     top: 27%;
     width: 100%;
-    
 }
 
 .banner-title {
@@ -127,7 +137,6 @@ hr {
 }
 
 #lead-banner p {
-    /* font-size: .8rem; */
     font-style: italic;
     margin-top: 1rem;
     max-width: 350px;
@@ -138,7 +147,7 @@ hr {
     font-size: 1.5rem;
     background: none;
     padding: 8px 16px;
-    /* line-height: 100%; */
+    line-height: 100%;
     text-decoration: none;
     margin-top: 1.4rem;
     border-radius: 50px;
@@ -160,7 +169,6 @@ hr {
     color: #fff;
     text-transform: uppercase;
     font-size: .6em;
-    
 }
 
 .columns {
@@ -168,19 +176,17 @@ hr {
 }
 
 .columns .ideas {
-    font-weight: 700;
-    max-width: 380px;
-    flex: 2;
-    padding: 4rem;
-    margin: 7rem;
+    max-width: 360px;
+    margin: 10rem;
     font-size: 1.2rem;
 }
 
+.columns .ideas h1 {
+    font-weight: bold;
+}
+
 .columns .paragraph {
-    /* max-width: 320px; */
-    flex: 2;
-    padding: 4rem;
-    margin: 7rem;
+    margin: 10rem;
     font-style: italic;
     color: rgb(146, 140, 140);
     font-size: .9em;
@@ -189,11 +195,10 @@ hr {
 }
 
 /* Gallery */
+
 .gallery-section .gallery {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    /*overflow: hidden;*/
-    
 }
 
 .gallery-section .gallery a:nth-child(1) {
@@ -205,6 +210,7 @@ hr {
     grid-row: 1/2;
     grid-column: 4/5;
 }
+
 
 .cases {
     text-align: center;
@@ -218,21 +224,21 @@ hr {
 
 .hello2 {
     border: 1px solid grey;
-    font-size: 1.7rem;
+    font-size: 3rem;
     background: none;
-    
-    padding: 8px 12px;
-    line-height: 50%;
+    padding: 0px 16px;
+    line-height: 100%;
     text-decoration: none;
-    margin-top: 1.4rem;
+    margin-top: 4rem;
     border-radius: 50px;
 }
 
 .hello2 a {
     text-decoration: none;
     text-transform: uppercase;
-    font-size: .6em;
-    color: grey;
+    font-size: .4em;
+    color: var(--main-grey);
+    line-height: 3;
 }
 
 /* Clients */
@@ -247,7 +253,7 @@ hr {
     position: absolute;
     top: -30px;
     left: 150px;
-    color: grey;
+    color: var(--main-grey);
     font-size: .8em;
     text-transform: uppercase;
     padding: 8px;
@@ -268,8 +274,7 @@ hr {
     top: 250px;
     left: 460px;
     text-transform: uppercase;
-    color: grey;
-    font-weight: 400;
+    color: var(--main-grey);
     font-size: .8em;
 }
 
@@ -305,19 +310,51 @@ hr {
     font-size: 1.2em;
 }
 
-    
 .bmb-container {
-    margin-top: 17rem;
+    margin-top: 5rem;
 }
+
+/* Logo */
+
+.row {
+    height: 40vh;
+    background-color: var(--dark-grey);
+    width: 100%;
+    padding-top: 4rem;
+}
+
+.row div {
+    padding: 0 8rem;
+}
+
+.row h5 {
+    color: var(--main-grey);
+    padding: 0;
+    background-color: var(--dark-grey);
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
+
+.row-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row-flex div {
+    padding: 0;
+}
+
+/* Footer */
 
 .footer p {
     text-decoration: none;
+    margin-bottom: 0;
 }
 
 footer h6 {
     font-weight: bold;
     font-size: 14px;
-    
 }
 
 .menu {
@@ -327,41 +364,32 @@ footer h6 {
 
 .menu li{
     list-style: none;
-    margin-top: 2rem;
 }
 
-.row {
-    height: 40vh;
-    background-color: rgb(37, 37, 37);
-    width: 100%;
-    color: #fff;
-    padding: 0;
-    margin: 0;
+
+#bmb-footer {
+    margin: 1.5rem;
+    display: flex;
 }
 
-.row div {
-    padding: 0 4rem;
+.mr {
+    margin-right: 15rem;
 }
 
-.row h5 {
-    margin-top: 3rem;
-    margin-bottom: 0;
-    padding: 0;
+#menu-footer-menu {
+    display: flex;
 }
 
-h5 {
-    background-color: rgb(37, 37, 37);
-    width: 100%;
-    color: #fff;
-    padding: 2rem;
-    margin: 0;
-    padding-left: 12rem;
-}
-
+/* Media Queries */
 
 @media screen and (max-width: 1024px) {
     .nav-links {
         width: 60%;
+    }
+
+    .mr {
+        margin-right: 0;
+        cursor: auto;
     }
 }
 
@@ -369,13 +397,12 @@ h5 {
     body {
         overflow-x: hidden;
     }
-    
-        
+
     .nav-links {
         position: absolute;
         right: 0;
         height: 50vh;
-        top: 9vh;
+        top: 7vh;
         background-color: #fff;
         flex-direction: column;
         align-items: center;
@@ -395,7 +422,6 @@ h5 {
 
     .nav-links li {
         opacity: 0;
-
     }
 
     .nav-links a {
@@ -460,7 +486,7 @@ h5 {
         display: none;
     }
     .row {
-        height: 140vh;
+        height: 180vh;
     }
     .row div {
         margin-bottom: 6rem;
@@ -469,10 +495,16 @@ h5 {
         display: flex;
         flex-direction: column;
     }
-    .columns .ideas,
+    .columns .ideas {
+        min-width: 400px;
+        margin: 11rem 2rem 3rem;;
+    }
+
     .columns .paragraph {
         min-width: 400px;
+        margin: 0 2rem 3rem;
     }
+
     #lead-banner {
         height: 30vh;
     }
@@ -487,5 +519,63 @@ h5 {
         font-size: .7em;
     }
     
-    .footer
+    #bmb-footer {
+        margin: 1.5rem;
+    }
+
+    .row-flex {
+        display: flex;
+        flex-direction: column;
+        align-items: 
+    }
+    .row-flex div img {
+        width: 100%;
+    }
+
+    .row-flex div {
+        margin-bottom: 1rem;
+    }
+
+    .row-flex div:nth-child(1) {
+        margin-top: 1rem;
+    }
+
+    .footer__contact,
+    .footer__contact h6 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    #menu-footer-menu li {
+        text-align: center;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.5rem;
+    }
+
+    .mr:hover {
+        margin-right: 0;
+        cursor: auto;
+    }
+
+    .clients {
+        display: none;
+    }
+
+    .banner-overlay {
+        padding: 2rem;
+        top: 0%;
+    }
+
+    .banner-title {
+        font-size: 1.6rem;
+    }
+
+    .banner-title .hello a {
+        font-size: .8rem;
+    }
+
 }
