@@ -26,6 +26,12 @@ body {
 /* Navigation */
 
 nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background-color: #fff;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -119,7 +125,7 @@ hr {
 }
 
 #lead-banner {
-    height: 88.9vh;
+    height: 94vh;
     overflow: hidden;
     position: relative;
 }
@@ -142,25 +148,23 @@ hr {
     max-width: 350px;
 }
 
-.hello {
-    border: 1px solid #fff;
-    font-size: 1.5rem;
+.hello,
+.hello2 {
+
     background: none;
-    padding: 8px 16px;
+
     line-height: 100%;
     text-decoration: none;
-    margin-top: 1.4rem;
     border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
+}
+
+.hello {
+    font-size: 1.5rem;
+    padding: 8px 16px;
+    border: 1px solid #fff;
+    margin-top: 1.4rem;
     letter-spacing: 2px;
     transition: .8s;
-    -webkit-transition: .8s;
-    -moz-transition: .8s;
-    -ms-transition: .8s;
-    -o-transition: .8s;
     cursor: pointer;
 }
 
@@ -170,6 +174,22 @@ hr {
     text-transform: uppercase;
     font-size: .6em;
 }
+
+.hello2 {
+    font-size: 3rem;
+    border: 1px solid grey;
+    margin-top: 4rem;
+}
+
+.hello2 a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .4em;
+    color: var(--main-grey);
+    line-height: 3;
+    padding: 8px 16px;
+}
+
 
 .columns {
     display: flex;
@@ -220,25 +240,6 @@ hr {
     -moz-transition: .6s;
     -ms-transition: .6s;
     -o-transition: .6s;
-}
-
-.hello2 {
-    border: 1px solid grey;
-    font-size: 3rem;
-    background: none;
-    padding: 0px 16px;
-    line-height: 100%;
-    text-decoration: none;
-    margin-top: 4rem;
-    border-radius: 50px;
-}
-
-.hello2 a {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: .4em;
-    color: var(--main-grey);
-    line-height: 3;
 }
 
 /* Clients */
@@ -321,6 +322,7 @@ hr {
     background-color: var(--dark-grey);
     width: 100%;
     padding-top: 4rem;
+    margin: 0;
 }
 
 .row div {
@@ -344,6 +346,7 @@ hr {
 .row-flex div {
     padding: 0;
 }
+
 
 /* Footer */
 
